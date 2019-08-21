@@ -8,7 +8,6 @@ def key_for_min_value(name_hash)
   lowest_key = nil
   name_hash.collect do |name, age|
     if lowest_value == nil || age < lowest_value
-      binding.pry
       lowest_value = age
       lowest_key = name
     end
